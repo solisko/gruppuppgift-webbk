@@ -6,8 +6,16 @@ body{
     background-color: lightblue;
 }
 
+nav{
+    text-align: end;
+}
+
 h1{
     text-align: center;
+}
+
+#create-link-sec{
+    text-align: end;
 }
 
 main{
@@ -17,6 +25,7 @@ main{
 }
 
 table, th, td{
+    width: 100%;
     border: 2px solid gray;
     border-collapse: collapse;
     padding: 10px;
@@ -35,7 +44,7 @@ table, th, td{
     margin: 0 auto; 
 }
 
-#create-post{
+#create-post-form{
     background-color: aliceblue;
     padding: 10px;
     border-radius: 8px;
