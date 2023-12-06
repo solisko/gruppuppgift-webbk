@@ -24,6 +24,12 @@ table, th, td{
     background-color: aliceblue;
 }
 
+.date-time {
+    white-space: nowrap;
+    text-align: center;
+}
+
+
 #create-container {
     width: 60%;
     margin: 0 auto; 
