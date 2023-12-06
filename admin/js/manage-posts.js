@@ -17,7 +17,8 @@ async function fetchAllPosts(){
                 <td class="date-time">
                     ${postDate.getDate()}-${postDate.getMonth()+1}-${postDate.getFullYear()}<br>
                     ${postDate.toLocaleTimeString()}
-                </td>                <td>
+                </td>                
+                <td>
                     <a href="update-post.html">Update</a>
                     <a href="#" data-id="${post._id}" class="delete-links">Delete</a>
                 </td>
