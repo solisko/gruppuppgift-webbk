@@ -7,7 +7,12 @@ async function createPost(e) {
     
     try{
         let formData = new FormData(form)
-        let data = {"content": formData.get('content')};
+        let data = {
+            "title": formData.get('title'),
+            "author": formData.get('author'),
+            "content": formData.get('content'),
+            "tags": formData.get('tags')
+        };
 
         await fetch (`https://blog-api-assignment.up.railway.app/posts`, {
             method: "POST",
@@ -24,3 +29,4 @@ async function createPost(e) {
         console.log(`ERROR: ${error}`)
     }
 }
+
