@@ -6,6 +6,12 @@ body{
     background-color: lightblue;
 }
 
+main{
+    max-width: 70%;
+    margin: 0 auto;
+  
+}
+
 nav{
     text-align: end;
 }
@@ -16,12 +22,6 @@ h1{
 
 #create-link-sec{
     text-align: end;
-}
-
-main{
-    width: 70%;
-    margin: 0 auto;
-  
 }
 
 table, th, td{
