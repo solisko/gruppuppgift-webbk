@@ -2,10 +2,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <script src="js/manage-posts.js"></script>
+    <main>
+        <nav id="top-link-sec">
+            <a href="index.html">Blog Posts</a>
+        </nav>
+        
+        <header id="handle-header">
+        <h1>Handle blog posts</h1>
+        </header>
+        
+        <section id="create-link-sec">
+            <a href="create-post.html">Create blog post</a>
+        </section>
+        
+        <table id="table">
+            <thead id="table-head">
+                <th>Title</th>
+                <th>Author</th>
+                <th>Tags</th>
+                <th>Date</th>
+                <th>Action</th>
+            </thead>
+            <tbody id="table-body">
+                <tr>
+                    <td>1 advent..</td>
+                    <td>Sofia</td>
+                    <td>jul, snö, gran</td>
+                    <td>3/12</td>
+                    <td>
+                        <a href="update-post.html">Update</a>
+                        <a href="#">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+<script src="js/manage-posts.js"></script>
 </body>
 </html>
