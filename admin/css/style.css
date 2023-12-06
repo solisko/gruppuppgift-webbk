@@ -1,0 +1,17 @@
+body{
+    background-color: lightblue;
+}
+
+main{
+    width: fit-content;
+    margin: auto;
+  
+}
+
+table, th, td{
+    border: 2px solid gray;
+    border-collapse: collapse;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: aliceblue;
+}
