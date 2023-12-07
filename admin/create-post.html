@@ -19,13 +19,17 @@
             <label for="author">Author</label>
             <input name="author" type="text" id="author" placeholder="Name..">
 
+            <label for="content">Content</label>
             <textarea name="content" id="content-textarea" cols="30" rows="10" placeholder="Write something.."></textarea>
             <label for="tags">Choose tags:</label>
-            <select name="tags" id="tags">
+            <select name="tags" id="tags" multiple class="tag-select">
                 <option value="internet">Internet</option>
                 <option value="food">Food</option>
                 <option value="travel">Travel</option>
                 <option value="media">Media</option>
+                <option value="skiing">Skiing</option>
+                <option value="swimming">Swimming</option>
+                <option value="shopping">Shopping</option>
             </select>
             <button type="submit" id="create-button" value="Create">Create</button>
             <a href="index.html" id="form-back-link">&#x2190; back</a>

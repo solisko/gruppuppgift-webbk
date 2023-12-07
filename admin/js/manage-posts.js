@@ -8,12 +8,12 @@ async function fetchAllPosts(){
         let blogPosts = "";
         for (let post of posts){
             let postDate = new Date(post.date);
-
+            console.log(post.tags.join(', '));
             blogPosts += `
             <tr>
                 <td>${post.title}</td>
                 <td>${post.author}</td>
-                <td>${post.tags}</td>
+                <td class="tags-class">${post.tags.join(', ')}</td>
                 <td class="date-time">
                     ${postDate.getDate()}-${postDate.getMonth()+1}-${postDate.getFullYear()}<br>
                     ${postDate.toLocaleTimeString()}

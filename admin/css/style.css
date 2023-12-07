@@ -38,6 +38,9 @@ table, th, td{
     text-align: center;
 }
 
+.tags-class{
+    width: 100%;
+}
 
 #create-container {
     width: 60%;
