@@ -19,7 +19,7 @@ async function fetchAllPosts(){
                     ${postDate.toLocaleTimeString()}
                 </td>                
                 <td>
-                    <a href="update-post.html">Update</a>
+                    <a href="update-post.html?id=${post._id}">Update</a>
                     <a href="#" data-id="${post._id}" class="delete-links">Delete</a>
                 </td>
             </tr>
