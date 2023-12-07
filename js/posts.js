@@ -10,10 +10,12 @@ async function fetchAllPosts() {
 
             postListHTML += `
             <li id="list-item">
-            <h2>${post.title}</h2> <br>
+            <br>
+            <h2>${post.title}</h2><br>
             <p>${post.author} <span class="date"> / ${postDate.getFullYear()}-${postDate.getMonth()+1}-${postDate.getDate()} ${postDate.toLocaleTimeString()}</span></p><br>
-            <p>Tags: ${post.tags}</p> <br>
+            <b>Tags:</b> <span> ${post.tags}</span><br>
             <p>${showContent} <a href="readmore.html?id=${post.id}">read more...</a> </p>
+            <br>
             </li>
             <hr>
             `
