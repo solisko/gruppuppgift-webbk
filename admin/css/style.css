@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+  
+body{
+    background-color: lightblue;
+}
+
+main{
+    max-width: 70%;
+    margin: 0 auto;
+  
+}
+
+nav{
+    text-align: end;
+}
+
+h1{
+    text-align: center;
+}
+
+#create-link-sec {
+    text-align: end;
+}
+
+table, th, td{
+    width: 100%;
+    border: 2px solid gray;
+    border-collapse: collapse;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: aliceblue;
+}
+
+.date-time {
+    white-space: nowrap;
+    text-align: center;
+}
+
+
+#create-container {
+    width: 60%;
+    margin: 0 auto; 
+}
+
+#create-post-form{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+#create-button{
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+}
