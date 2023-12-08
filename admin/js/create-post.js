@@ -34,4 +34,3 @@ async function createPost(e) {
         console.log(`ERROR: ${error}`)
     }
 }
-
