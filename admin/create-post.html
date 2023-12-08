@@ -15,14 +15,14 @@
         
         <form id="create-post-form">
             <label for="title">Title</label>
-            <input name="title" type="text" id="title" placeholder="Title of your post..">
+            <input name="title" type="text" id="title" required placeholder="Title of your post..">
             <label for="author">Author</label>
-            <input name="author" type="text" id="author" placeholder="Name..">
+            <input name="author" type="text" id="author" required placeholder="Name..">
 
             <label for="content">Content</label>
-            <textarea name="content" id="content-textarea" cols="30" rows="10" placeholder="Write something.."></textarea>
+            <textarea name="content" id="content-textarea" cols="30" rows="10" placeholder="Write something.." required></textarea>
             <label for="tags">Choose tags:</label>
-            <select name="tags" id="tags" multiple>
+            <select name="tags" id="tags" multiple required>
                 <option value="Instagrammable">Instagrammable</option>
                 <option value="Food">Food</option>
                 <option value="Eating">Eating</option>
@@ -32,6 +32,7 @@
                 <option value="Shopping">Shopping</option>
                 <option value="Christmas">Christmas</option>
                 <option value="Summer">Summer</option>
+                <option value="Weather">Weather</option>
             </select>
             <button type="submit" id="create-button" value="Create">Create</button>
             <a href="index.html" id="form-back-link">&#x2190; back</a>
