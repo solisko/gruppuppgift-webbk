@@ -4,7 +4,10 @@
 }
   
 body{
+    /* background-color: #f0bf88; */
     background-color: #f0bf88;
+    background-image: linear-gradient(62deg, #f0bf88 0%, #F7CE68 100%);
+    
 }
 
 hr{
@@ -25,6 +28,10 @@ a:hover{
     color: #f0bf88;
 }
 
+.top-link-sec, #create-link-sec {
+    text-align: end;
+}
+
 main{
     max-width: 65%;
     margin: 0 auto;
@@ -34,16 +41,10 @@ h1{
     text-align: center;
 }
 
-.top-link-sec, #create-link-sec {
-    text-align: end;
-}
-
 table, th, td{
     width: 100%;
     padding: 10px;
     margin: 5px 0;
-    background-color: #efdbc3;
-    border-radius: 8px;
     border-collapse: collapse;
     
 }
@@ -54,6 +55,23 @@ table{
 
 th, td{
     border: 2px solid #f0bf88;
+}
+
+th{
+    background-color: #f1e8de; 
+    font-size: large;
+}
+
+thead{
+    height: 60px;
+}
+
+tr:nth-child(even) {
+    background-color: #f1e8de; 
+}
+
+tr:nth-child(odd) {
+    background-color: #efdbc3; 
 }
 
 .date-time {
@@ -69,7 +87,6 @@ th, td{
 form{
     background-color: #efdbc3;
     padding: 10px;
-    /* border-radius: 8px; */
 }
 
 input[type=text], select, textarea {
