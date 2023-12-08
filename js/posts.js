@@ -18,7 +18,7 @@ async function fetchAllPosts() {
             <br>
             <b>Tags:</b> <span> ${post.tags}</span>
             <br>
-            <p>${showContent} <a href="readmore.html?id=${post.id}">read more...</a></p>
+            <p>${showContent} <a href="readmore.html?id=${post.id}">...read more</a></p>
             <br>
             </li>
             <hr>

@@ -1,3 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
 ul {
     list-style-type: none;
 }
+
+nav {
+    text-align: end;
+    margin: 10px 0;
+}
+
+a {
+    text-decoration:none
+}
+
+#container {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: beige;
+}
+
