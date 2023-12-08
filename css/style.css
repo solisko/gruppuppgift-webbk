@@ -12,15 +12,31 @@ nav {
 }
 
 a {
-    text-decoration:none
+    text-decoration-line: none;
+}
+
+#admin {
+    color:#D38B39;
 }
 
 #container {
-    max-width: 60%;
+    max-width: 55%;
     margin: 0 auto;
 }
 
 body {
-    background-color: beige;
+    background-color: #FCFAF6;
+}
+
+/* h1 {
+    color:#D38B39;
+} */
+
+h1, h2 {
+    color: #D38B39;
+}
+
+#top-hr {
+    border: 1px solid #f0bf88
 }
 
