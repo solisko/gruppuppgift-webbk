@@ -6,31 +6,40 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <hr>
+    <div class="container">
+        <nav class="top-link-sec">
+            <a href="index.html">Back to Admin</a>
+        </nav>
+        <hr>
         <h1>Update post</h1>
         
         <form id="update-post-form">
             <label for="title">Title</label>
-            <input name="title" type="text" id="title" placeholder="">
+            <input name="title" type="text" id="title">
             
             <label for="author">Author</label>
-            <input name="author" type="text" id="author" placeholder="">
+            <input name="author" type="text" id="author">
         
-            <textarea name="content" id="content-textarea" cols="30" rows="10" placeholder=""></textarea>
+            <textarea name="content" id="content-textarea" cols="30" rows="10"></textarea>
             
             <label for="tags">Choose tags:</label>
-            <select name="tags" id="tags">
-                <option value="internet">Internet</option>
-                <option value="food">Food</option>
-                <option value="travel">Travel</option>
-                <option value="media">Media</option>
+            <select name="tags" id="tags" multiple>
+                <option value="Instagrammable">Instagrammable</option>
+                <option value="Food">Food</option>
+                <option value="Eating">Eating</option>
+                <option value="Travel">Travel</option>
+                <option value="Skiing">Skiing</option>
+                <option value="Swimming">Swimming</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Christmas">Christmas</option>
+                <option value="Summer">Summer</option>
+                <option value="Weather">Weather</option>
             </select>
             
             <button type="submit" id="update-button">Update</button>
             <a href="index.html" id="form-back-link">&#x2190; back</a>
         </form>
-    <div></div>
+    </div>
 
     <script src="js/update-post.js"></script>
 </body>

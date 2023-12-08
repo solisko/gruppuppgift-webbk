@@ -12,15 +12,11 @@ main{
   
 }
 
-nav{
-    text-align: end;
-}
-
 h1{
     text-align: center;
 }
 
-#create-link-sec {
+.top-link-sec, #create-link-sec {
     text-align: end;
 }
 
@@ -38,12 +34,12 @@ table, th, td{
     text-align: center;
 }
 
-#create-container {
+.container {
     width: 60%;
     margin: 0 auto; 
 }
 
-#create-post-form{
+form{
     background-color: aliceblue;
     padding: 10px;
     border-radius: 8px;
@@ -58,13 +54,13 @@ input[type=text], select, textarea {
     resize: vertical;
 }
 
-#create-button{
+button[type=submit]{
     border-radius: 4px;
     width: 100%;
     padding: 12px;
     margin: 5px 0;
 }
 
-#create-button:hover{
+button[type=submit]:hover{
     background-color: lightblue;
 }
