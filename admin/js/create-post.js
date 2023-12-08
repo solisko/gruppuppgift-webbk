@@ -16,7 +16,7 @@ async function createPost(e) {
             "title": formData.get('title'),
             "author": formData.get('author'),
             "content": formData.get('content'),
-            "tags": selectedTags
+            "tags": selectedTags.join(', ')
         };
 
         await fetch (`https://blog-api-assignment.up.railway.app/posts`, {
