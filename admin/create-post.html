@@ -15,17 +15,24 @@
         
         <form id="create-post-form">
             <label for="title">Title</label>
-            <input name="title" type="text" id="title" placeholder="Title of your post..">
+            <input name="title" type="text" id="title" required placeholder="Title of your post..">
             <label for="author">Author</label>
-            <input name="author" type="text" id="author" placeholder="Name..">
+            <input name="author" type="text" id="author" required placeholder="Name..">
 
-            <textarea name="content" id="content-textarea" cols="30" rows="10" placeholder="Write something.."></textarea>
+            <label for="content">Content</label>
+            <textarea name="content" id="content-textarea" cols="30" rows="10" placeholder="Write something.." required></textarea>
             <label for="tags">Choose tags:</label>
-            <select name="tags" id="tags">
-                <option value="internet">Internet</option>
-                <option value="food">Food</option>
-                <option value="travel">Travel</option>
-                <option value="media">Media</option>
+            <select name="tags" id="tags" multiple required>
+                <option value="Instagrammable">Instagrammable</option>
+                <option value="Food">Food</option>
+                <option value="Eating">Eating</option>
+                <option value="Travel">Travel</option>
+                <option value="Skiing">Skiing</option>
+                <option value="Swimming">Swimming</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Christmas">Christmas</option>
+                <option value="Summer">Summer</option>
+                <option value="Weather">Weather</option>
             </select>
             <button type="submit" id="create-button" value="Create">Create</button>
             <a href="index.html" id="form-back-link">&#x2190; back</a>
