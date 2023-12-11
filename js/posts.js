@@ -13,7 +13,7 @@ async function fetchAllPosts() {
             <br>
             <h2>${post.title}</h2>
             <br>
-            <i>${post.author} <span class="date"> / ${postDate.getFullYear()}-${postDate.getMonth()+1}-${postDate.getDate()} ${postDate.toLocaleTimeString()}</span></i>
+            <i>${post.author} / ${postDate.getFullYear()}-${postDate.getMonth()+1}-${postDate.getDate()} ${postDate.toLocaleTimeString()}</i>
             <br>
             <br>
             <b>Tags:</b> <span> ${post.tags}</span>
