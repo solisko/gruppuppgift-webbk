@@ -8,12 +8,14 @@ async function fetchPost() {
     try {
         const response = await fetch('https://blog-api-assignment.up.railway.app/posts/' + urlParams.get('id'));
         const post = await response.json();
-        console.log(post);
+        
 
         document.getElementById('title').value = post.title;
         document.getElementById('content-textarea').value = post.content;
         document.getElementById('author').value = post.author;
         document.getElementById('tags').value = post.tags;
+
+        console.log(post.tags)
     } catch(error) {
         console.log(error)
     }  
@@ -24,14 +26,21 @@ document.getElementById('update-post-form').addEventListener('submit', updatePos
 async function updatePost(e) {
     e.preventDefault();
     const form = e.target;
+    
 
     try {
-        const formData = new FormData(form)
+
+        let formData = new FormData(form)
+
+        let tags = [];
+        for(const tag of formData.getAll('tags')) {
+            tags.push(tag);
+        }
         const data = {
             "title": formData.get("title"),
             "content": formData.get("content"),
             "author": formData.get("author"),
-            "tags": formData.get("tags"),
+            "tags": tags.join(', ')
         };
 
         await fetch('https://blog-api-assignment.up.railway.app/posts/'+ urlParams.get('id'), {
