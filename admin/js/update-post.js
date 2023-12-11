@@ -17,11 +17,13 @@ async function fetchPost() {
         const postTags = post.tags.join(', ');
 
         for (let i = 0; i < tagsSelect.options.length; i++) {
-            if (postTags.includes(tagsSelect.options[i].value)) {
-                tagsSelect.options[i].selected = true;
-            }
+            const optionValue = tagsSelect.options[i].value;
+    
+            if (postTags.includes(optionValue)) {
+            tagsSelect.options[i].selected = true;
         }
-        
+    }
+
         console.log(post.tags)
     } catch(error) {
         console.log(error)
