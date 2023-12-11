@@ -9,16 +9,23 @@ async function fetchPost() {
         const response = await fetch('https://blog-api-assignment.up.railway.app/posts/' + urlParams.get('id'));
         const post = await response.json();
         
-
         document.getElementById('title').value = post.title;
         document.getElementById('content-textarea').value = post.content;
         document.getElementById('author').value = post.author;
-        document.getElementById('tags').value = post.tags;
+        
+        const tagsSelect = document.getElementById('tags');
+        const postTags = post.tags.join(', ');
 
+        for (let i = 0; i < tagsSelect.options.length; i++) {
+            if (postTags.includes(tagsSelect.options[i].value)) {
+                tagsSelect.options[i].selected = true;
+            }
+        }
+        
         console.log(post.tags)
     } catch(error) {
         console.log(error)
-    }  
+    }
 }
 
 document.getElementById('update-post-form').addEventListener('submit', updatePost);

@@ -16,7 +16,7 @@ async function fetchAllPosts() {
             <i>${post.author} <span class="date"> / ${postDate.getFullYear()}-${postDate.getMonth()+1}-${postDate.getDate()} ${postDate.toLocaleTimeString()}</span></i>
             <br>
             <br>
-            <b>Tags:</b> <span> ${post.tags}</span>
+            <b>Tags:</b> <span> ${post.tags.join(', ')}</span>
             <br>
             <p>${showContent} <a href="readmore.html?id=${post._id}">...read more</a></p>
             <br>
