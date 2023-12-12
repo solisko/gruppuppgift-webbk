@@ -12,14 +12,15 @@ async function fetchAllPosts(){
             blogPosts += `
             <tr>
                 <td>${post.title}</td>
-                <td id="author-td">${post.author}</td>
+                <td class="author-td">${post.author}</td>
                 <td>${post.tags}</td>
                 <td class="date-time">
                     ${postDate.toLocaleDateString()}<br>
                     ${postDate.toLocaleTimeString()}
                 </td>                
-                <td>
-                    <a href="update-post.html?id=${post._id}">Update</a>
+                <td class="links">
+                    <a href="update-post.html?id=${post._id}">Update</a><br>
+                    <hr class="bot-hr">
                     <a href="#" data-id="${post._id}" class="delete-links">Delete</a>
                 </td>
             </tr>
