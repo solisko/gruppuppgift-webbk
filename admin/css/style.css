@@ -79,6 +79,10 @@ tr:nth-child(odd) {
     text-align: center;
 }
 
+#author-td{
+    white-space: nowrap;
+}
+
 .container {
     width: 65%;
     margin: 0 auto; 

@@ -12,10 +12,10 @@ async function fetchAllPosts(){
             blogPosts += `
             <tr>
                 <td>${post.title}</td>
-                <td>${post.author}</td>
+                <td id="author-td">${post.author}</td>
                 <td>${post.tags}</td>
                 <td class="date-time">
-                    ${postDate.getDate()}/${postDate.getMonth()+1}-${postDate.getFullYear()}<br>
+                    ${postDate.toLocaleDateString()}<br>
                     ${postDate.toLocaleTimeString()}
                 </td>                
                 <td>
