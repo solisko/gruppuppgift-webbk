@@ -1,13 +1,11 @@
- 
 body{
     /* background-color: #f0bf88; */
-    background-color: #f0bf88;
-    background-image: linear-gradient(62deg, #f0bf88 0%, #F7CE68 100%);
-    
+    background-color: var(--bkg-orange);
+    background-image: linear-gradient(62deg, var(--bkg-orange) 0%, var(--bkg-yellow) 100%);
 }
 
 hr{
-    border: 1px solid #D38B39;
+    border: 1px solid var(--dark-orange);
 }
 
 .bot-hr{
@@ -16,16 +14,16 @@ hr{
 
 a{
     text-decoration: none;
-    color: #D38B39;
+    color: var(--dark-orange);
     font-weight: bold;
 }
 
 .top-links:hover{
-    color: #efdbc3;
+    color: var(--light-orange);
 }
 
 a:hover{
-    color: #f0bf88;
+    color: var(--bkg-orange);
 }
 
 .top-link-sec, #create-link-sec {
@@ -54,11 +52,11 @@ table{
 }
 
 th, td{
-    border: 2px solid #f0bf88;
+    border: 2px solid var(--bkg-orange);
 }
 
 th{
-    background-color: #f1e8de; 
+    background-color: var(--light-tb-tr); 
     font-size: large;
 }
 
@@ -67,11 +65,11 @@ thead{
 }
 
 tr:nth-child(even) {
-    background-color: #f1e8de; 
+    background-color: var(--light-tb-tr); 
 }
 
 tr:nth-child(odd) {
-    background-color: #efdbc3; 
+    background-color: var(--light-orange); 
 }
 
 .date-time, .links {
@@ -88,7 +86,7 @@ tr:nth-child(odd) {
 }
 
 form{
-    background-color: #efdbc3;
+    /* background-color: #efdbc3; */
     padding: 10px;
 }
 
@@ -109,5 +107,5 @@ button[type=submit]{
 }
 
 button[type=submit]:hover{
-    background-color: #f0bf88;
+    background-color: var(--bkg-orange);
 }
