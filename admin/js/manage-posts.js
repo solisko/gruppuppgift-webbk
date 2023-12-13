@@ -10,6 +10,7 @@ async function fetchAllPosts(){
         let blogPosts = "";
         for (let post of posts){
             let postDate = new Date(post.date);
+            // eftersom alla posts inte är våra så la jag till att det står nedan ist för null om taggarna inte funkar
             let tags = post.tags ? post.tags : 'Update post to select tags.';
             
             blogPosts += `
