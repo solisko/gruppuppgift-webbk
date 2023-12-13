@@ -7,7 +7,7 @@ body{
 }
 
 nav{
-    clear: both;
+    /* clear: both; */
     position: sticky;
     top: 0;
     width: 100%;
@@ -15,7 +15,7 @@ nav{
     padding: 8px;
     background-color: var(--bkg-orange);
     background-image: linear-gradient(62deg, var(--bkg-orange) 0%, var(--bkg-yellow) 100%);
-    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 
 hr{
@@ -29,7 +29,7 @@ a{
     font-weight: bold;
 }
 
-.top-links:hover{
+.top-links:hover, #form-back-link:hover{
     color: var(--light-orange);
 }
 
@@ -112,6 +112,7 @@ input[type=text], select, textarea {
 }
 
 button[type=submit]{
+    background-color: var(--light-orange);
     border-radius: 4px;
     width: 100%;
     padding: 12px;
@@ -119,5 +120,5 @@ button[type=submit]{
 }
 
 button[type=submit]:hover{
-    background-color: var(--bkg-orange);
+    background-color: var(--bkg-yellow);
 }
