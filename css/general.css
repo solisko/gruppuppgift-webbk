@@ -4,6 +4,8 @@
 }
 
 :root {
+    --bkg-fade: linear-gradient(62deg, var(--bkg-orange) 0%, var(--bkg-yellow) 100%);
+
     --bkg-orange: #f0bf88;
     --bkg-yellow: #F7CE68;
     --dark-orange: #D38B39;
