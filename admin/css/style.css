@@ -107,11 +107,12 @@ input[type=text], select, textarea {
 }
 
 button[type=submit]{
-    background-color: var(--light-orange);
+    background-color: var(--light-tb-tr);
     border-radius: 4px;
     width: 100%;
     padding: 12px;
     margin: 5px 0;
+    box-shadow: 2px 2px #8888887d;
 }
 
 button[type=submit]:hover{
