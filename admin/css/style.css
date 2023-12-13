@@ -1,14 +1,25 @@
+@import url(..\css\general.css);
+
 body{
-    /* background-color: #f0bf88; */
     background-color: var(--bkg-orange);
     background-image: linear-gradient(62deg, var(--bkg-orange) 0%, var(--bkg-yellow) 100%);
+    margin: 0;
+}
+
+nav{
+    clear: both;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 8px;
+    background-color: var(--bkg-orange);
+    background-image: linear-gradient(62deg, var(--bkg-orange) 0%, var(--bkg-yellow) 100%);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
 hr{
     border: 1px solid var(--dark-orange);
-}
-
-.bot-hr{
     margin: 0;
 }
 
@@ -28,6 +39,7 @@ a:hover{
 
 .top-link-sec, #create-link-sec {
     text-align: end;
+    /* float: right;; */
 }
 
 main{

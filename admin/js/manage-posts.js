@@ -20,7 +20,7 @@ async function fetchAllPosts(){
                 </td>                
                 <td class="links">
                     <a href="update-post.html?id=${post._id}">Update</a><br>
-                    <hr class="bot-hr">
+                    <hr>
                     <a href="#" data-id="${post._id}" class="delete-links">Delete</a>
                 </td>
             </tr>
