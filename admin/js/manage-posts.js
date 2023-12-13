@@ -1,3 +1,5 @@
+// hämtar alla posts och lägger in de i en table
+
 fetchAllPosts();
 
 async function fetchAllPosts(){
@@ -8,12 +10,13 @@ async function fetchAllPosts(){
         let blogPosts = "";
         for (let post of posts){
             let postDate = new Date(post.date);
+            let tags = post.tags ? post.tags : 'Update post to select tags.';
             
             blogPosts += `
             <tr>
                 <td>${post.title}</td>
                 <td class="author-td">${post.author}</td>
-                <td>${post.tags}</td>
+                <td>${tags}</td>
                 <td class="date-time">
                     ${postDate.toLocaleDateString()}<br>
                     ${postDate.toLocaleTimeString()}
@@ -33,7 +36,7 @@ async function fetchAllPosts(){
         console.log(`ERROR: ${error}`)
     }
 
-
+    // delete länken tar bort om response är OK
     const deleteLinks = document.getElementsByClassName('delete-links');
 
     for (let link of deleteLinks){
@@ -41,7 +44,7 @@ async function fetchAllPosts(){
             e.preventDefault();
 
             let postId = e.target.dataset.id;
-            // console.log(postId);
+
             const response = await fetch (`https://blog-api-assignment.up.railway.app/posts/${postId}`, {
                 method: 'DELETE'
             });  
@@ -49,9 +52,6 @@ async function fetchAllPosts(){
             if (response.ok) {
                 e.target.parentNode.parentNode.remove(); 
             } 
-            // else {
-            //     throw new Error(`Can not remove post!`);
-            // }
         })
     }
 
