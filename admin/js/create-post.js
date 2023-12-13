@@ -1,3 +1,5 @@
+// skapar inlägg
+
 document.getElementById('create-post-form').addEventListener('submit', createPost);
 
 async function createPost(e) {
@@ -7,6 +9,8 @@ async function createPost(e) {
     
     try {
         let formData = new FormData(form);
+
+        // lägger till tags i en tom array
         let selectedTags = [];
         for (const option of formData.getAll('tags')) {
             selectedTags.push(option);
