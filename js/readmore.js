@@ -9,7 +9,6 @@ async function readPost() {
         
         if (!response.ok) {
             throw new Error(`Error ${response.status}: ${response.statusText}`);
-            // throw new Error('Something when wrong');
         }
         
         const post = await response.json();
@@ -18,7 +17,7 @@ async function readPost() {
         <h1>${post.title}</h1>
         <i>${post.author} / ${new Date(post.date).toLocaleString()}</i>
         <p>${post.content}</p>
-        <b>Tags:</b> <span> ${post.tags.join(', ')}</span>
+        <b>Tags:</b> <span> ${post.tags}</span>
         `
 
     } catch(error) {
