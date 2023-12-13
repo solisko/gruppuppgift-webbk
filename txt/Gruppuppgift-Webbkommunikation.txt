@@ -3,3 +3,5 @@ Gruppuppgift Webbkommunikation
 Katariina tar ansvarsområde 1
 
 Sofia tar ansvarsområde 2
+
+Vi satt gemensamt i skolan och gjorde readme.html och readme.js delen.
