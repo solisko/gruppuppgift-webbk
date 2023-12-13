@@ -14,7 +14,7 @@ async function readPost() {
         const post = await response.json();
         
         document.getElementById('post-content').innerHTML = `
-        <h1>${post.title}</h1>
+        <h1 id="h1-post">${post.title}</h1>
         <i>${post.author} / ${new Date(post.date).toLocaleString()}</i>
         <p>${post.content}</p>
         <b>Tags:</b> <span> ${post.tags}</span>
