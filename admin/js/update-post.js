@@ -36,7 +36,7 @@ async function updatePost(e) {
     e.preventDefault();
     const form = e.target;
     
-
+    
     try {
         let formData = new FormData(form)
 
@@ -64,5 +64,6 @@ async function updatePost(e) {
             console.log(error);
         } 
     }
+
 
 updatePost();
