@@ -1,5 +1,7 @@
 Gruppuppgift Webbkommunikation
 
+https://github.com/solisko/gruppuppgift-webbk.git
+
 Katariina tar ansvarsområde 1
 
 Sofia tar ansvarsområde 2
