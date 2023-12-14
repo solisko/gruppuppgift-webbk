@@ -22,5 +22,5 @@ async function readPost() {
 
     } catch(error) {
         console.log(`ERROR: ${error}`)
-    }  
+    }
 }

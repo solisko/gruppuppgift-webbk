@@ -16,11 +16,11 @@ async function fetchPost() {
         const tagsSelect = document.getElementById('tags');
         const postTags = post.tags.join(', ');
 
-        for (let i = 0; i < tagsSelect.options.length; i++) {
-            const optionValue = tagsSelect.options[i].value;
+    for (let i = 0; i < tagsSelect.options.length; i++) {
+        const optionValue = tagsSelect.options[i].value;
     
-            if (postTags.includes(optionValue)) {
-            tagsSelect.options[i].selected = true;
+        if (postTags.includes(optionValue)) {
+        tagsSelect.options[i].selected = true;
         }
     }
 
@@ -38,7 +38,6 @@ async function updatePost(e) {
     
 
     try {
-
         let formData = new FormData(form)
 
         let tags = [];
@@ -65,3 +64,5 @@ async function updatePost(e) {
             console.log(error);
         } 
     }
+
+updatePost();

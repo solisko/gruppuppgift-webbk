@@ -26,6 +26,7 @@ async function fetchAllPosts() {
         }
 
         document.getElementById('post-list').innerHTML = postListHTML;
+        
     } catch(error) {
         console.log(error)
     }
