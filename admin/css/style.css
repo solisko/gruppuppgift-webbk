@@ -7,7 +7,6 @@ body{
 }
 
 nav{
-    /* clear: both; */
     position: sticky;
     top: 0;
     width: 100%;
@@ -39,7 +38,6 @@ a:hover{
 
 .top-link-sec, #create-link-sec {
     text-align: end;
-    /* float: right;; */
 }
 
 main, .container{
